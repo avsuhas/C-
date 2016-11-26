@@ -1,1 +1,24 @@
+/* MACRO to set and reset a bit in a number */
 
+#include<stdio.h>
+#define BITS(x) (1<<x)
+
+int main()
+{
+  printf("Enter the number to set\n");
+  scanf("%d",&num);
+  printf("Enter the bit to be set\n");
+  scanf("%d",&x);
+  num = num|BITS(x);
+  
+  printf("After Setting  the value is %d\n",num);
+  
+  printf("Enter the number to reset\n");
+  scanf("%d",&num);
+  printf("Enter the bit to be reset\n");
+  scanf("%d",&x);
+  num = num & ~BITS(x);
+  printf("After reset Value is %d\n"num);
+}
+  
+  
