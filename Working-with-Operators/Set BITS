@@ -1,0 +1,14 @@
+/* Set Bits(x,p,n,y)
+    x = 170(10101010), p = 4, n = 3, y = 39(00100111) –  3 bits from 4th position in x is replace by last 3 bits of y.
+    Hence the value of x = 186(10111010)
+*/
+
+#include<stdio.h>
+int main()
+{
+     int y, x, p, n;
+     printf("Enter the value of x,p,n,y\n");
+     scanf("%d%d%d%d", &x, &p, &n, &y);
+     x = (x & ~(~(~0 << n) << (p + 1 - n))) | ((y & ~(~0 << n)) << (p + 1 - n));
+     printf("after setbits value = %d\n",x);
+}
