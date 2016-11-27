@@ -1,0 +1,15 @@
+/* Get BITS
+
+*/
+
+#include<stdio.h>
+int main()
+{
+  int p,x,n;
+  printf("Enter the value of x,p and n\n");
+  scanf("%d%d%d",&x,&p,&n);
+  
+  x = x >> (p+1-n) & ~(~0 << n);
+  
+  printf(" After get bits value = %d\n",x);
+}
