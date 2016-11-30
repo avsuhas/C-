@@ -1,0 +1,18 @@
+/* program to find power of a number using recursion */
+
+int main()
+{
+  int res;
+  printf("enter the number and its power\n");
+  scanf("%d%d",&b,&e);
+  res = pow(b,e);
+  printf("%d result" = res);
+}
+
+int pow(int b, int e)
+{
+  if(e==0)
+    return 1;
+  else
+    return b * pow(b,e-1);
+}
