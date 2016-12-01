@@ -1,0 +1,22 @@
+/* program for linear search */
+
+int main()
+{
+  int a[10],key;
+  printf("Enter the elements\n");
+  for(i=0 ; i<10 ; i++)
+  {
+    scanf("%d",a[i]);
+  }
+  printf("Enter the elements to search\n");
+  scanf("%d",&key);
+  
+  for(i=0;i<10;i++)
+  {
+    if(a[i]==key)
+    printf("Elememt found at position %d",i);
+    else 
+    printf("Element not found");
+  }
+}
+  
