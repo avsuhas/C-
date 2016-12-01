@@ -1,0 +1,33 @@
+/* program for Binary Search */
+
+int main()
+{
+  int a[10],low,high,mid,key;
+  printf("Enter the Elements\n");
+  for(i-0;i<10;i++)
+  { 
+    scanf("%d",a[i]);
+    }
+   low = 0;
+   high = 10 - 1;
+   printf("Enter the search key\n");
+   scanf("%d",&key);
+   mid = (low + high)/2;
+   while(low <= high)
+   {
+    if (a[mid]==key)
+    {
+      printf("The element is at mid location %d", mid);
+     }
+     else if (key < a[mid])
+     {
+      high = mid - 1;
+      }
+      else (key>a[mid])
+      {
+        low = mid + 1;
+       }
+   }
+}
+    
+  
