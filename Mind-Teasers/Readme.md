@@ -1,1 +1,1 @@
-This folder contains programs implemented to show how the function pointers are linking to functions.
+This folder contains programs implemented to show the working of function pointers.
