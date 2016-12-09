@@ -1,4 +1,4 @@
-/* void (*fptr)():
+/* void (*fptr)();
     fptr is a pointer that points to a function which receives nothing and returns nothing
                 Date : 30 June 2016
  */
