@@ -1,4 +1,5 @@
-/* Program to find the bit count of a number */
+/* Program to find the bit count of a number i.e if the number contains binary 1 
+        it sums up and given the result*/
 
 #include<stdio.h>
 
