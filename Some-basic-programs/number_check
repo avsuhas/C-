@@ -1,0 +1,19 @@
+/* program to find positive or negative number */
+
+
+#include<stdio.h>
+
+int main()
+{
+        int num;
+        printf("enter a number\n");
+        scanf("%d",&num);
+
+        if(num<0)
+        {
+                printf("Its a negative number\n");
+        }
+        else
+                printf("Its a positive number\n");
+}
+
