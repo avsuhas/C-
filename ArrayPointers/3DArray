@@ -1,1 +1,38 @@
+/* program to pass 3D Array to a function using pointers and print the values */
 
+#include<stdio.h>
+
+void fun(int (*p)[3][3]);
+
+int main()
+{
+        int a[3][3][3];
+        int i,j,k;
+        printf("Enter the values\n");
+        for(i=0;i<3;i++)
+        {
+                 for(j=0;j<3;j++)
+                        {
+                                 for(k=0;k<3;k++)
+                                         {
+                                                scanf("%d",&a[i][j][k]);
+                                          }
+                        }
+        }
+        fun(a);
+}
+
+void fun(int (*p)[3][3])
+{
+        int i,j,k;
+        for(i=0;i<3;i++)
+        {
+                 for(j=0;j<3;j++)
+                        {
+                                 for(k=0;k<3;k++)
+                                 {
+                                        printf("%d",*(*(*(p+i)+j)+k));
+                                  }
+                        }
+        }
+}
