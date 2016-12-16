@@ -1,0 +1,43 @@
+/* program to return a 3D Array from a function using pointers */
+
+
+
+#include<stdio.h>
+
+int (*fun())[3][3];
+
+int main()
+{
+      int i,j,k;
+        int (*p)[3][3] = fun();
+        for(i=0;i<3;i++)
+        {
+                 for(j=0;j<3;j++)
+                        {
+                                 for(k=0;k<3;k++)
+                                         {
+                                                printf("%d",*(*(*(p+i)+j)+k));
+                                          }
+                        }
+        }
+
+}
+
+int (*fun())[3][3]
+{
+        static int a[3][3][3];
+        int i,j,k;
+        printf("enter the values\n");
+
+        for(i=0;i<3;i++)
+        {
+                 for(j=0;j<3;j++)
+                        {
+                                 for(k=0;k<3;k++)
+                                 {
+                                        scanf("%d",&a[i][j][k]);
+                                  }
+                        }
+        }
+        return a;
+}
