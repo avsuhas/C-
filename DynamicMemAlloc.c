@@ -21,7 +21,7 @@ int main()
                 scanf("%d",(p+i));
         }
 
-        for(i=0;i<n;i++)
+        for(i=0; i<n; i++)
         {
                 sum = sum+ *(p+i);
         }
