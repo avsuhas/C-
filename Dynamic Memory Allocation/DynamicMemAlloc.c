@@ -1,4 +1,4 @@
-/* Dynamic Memory Allocation */
+/* Program to use Dynamic Memory Allocation */
 
 
 
