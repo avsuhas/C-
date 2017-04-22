@@ -1,1 +1,1 @@
-# C programs covering all the concepts of C  
+# C programs covering all the concepts of Structural Programming
