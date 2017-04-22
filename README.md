@@ -1,1 +1,1 @@
-# This Repository contains all the C programs covering all the concepts of C  
+# C programs covering all the concepts of C  
